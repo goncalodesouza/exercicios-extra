@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #221C1A;
+    color: #D1C4BC;
+    padding: 10px;
+}
+
+p {
+    text-align: justify;
+}
+
+h1 {
+    color: #F4EBE4;
+}
+
+a {
+    text-decoration: none;
+    color: #C29B83;
+}
+
+a:hover {
+    color: #DBB39A;
+}
+
+
+img {
+    width: 300px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}

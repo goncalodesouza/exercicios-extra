@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "Poppins";
+    src: url(Poppins/Poppins-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1e1e1e;
+}
+header {
+    background-color: #ffff;
+    box-shadow: 0px 2px 10px rgb(0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+footer {
+    background-color: black;
+}
+h1 {
+    color: #1e1e1e;
+}
+span {
+    color: #c9a227;
+}
+div.menu a {
+    color: #1e1e1e;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 5px;
+}
+div.menu a:hover {
+    color: #c9a227;
+    text-decoration: underline;
+}
+div.horario a {
+    display: flex;
+    width: 120px;
+    background-color: #C9A227;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 2px;
+    transition: 0.5s;
+}
+div.horario a:hover {
+    background-color: #b68f1d;
+    transform: translateY(-2px)
+}
+main {
+    display: block;
+    width: 90vw;
+    background-color: rgb(212, 212, 212);
+    margin: auto;
+    text-align: left;
+}
+main div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main div p.texto {
+    color: #C9A227;
+    padding-bottom: 5px;
+}
+main div h2 {
+    color: #FFFFFF;
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+main div p.paragrafo {
+    color: #E5E5E5;
+    padding-bottom: 30px;
+}
+main div a.primario {
+    width: 110px;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: #c9a227;
+    color: #FFFFFF;
+}
+main div a.primario:hover {
+    color: #b68f1d;
+}
+main div a.secundario {
+    width: 150px;
+    padding: 2px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    border: 1px 1px solid #FFFFFF;
+}
+main div a.secundario:hover {
+    background-color: #FFFFFF;
+    color: #1e1e1e;
+}
