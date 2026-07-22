@@ -1,0 +1,543 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Poppins";
+    src: url(Poppins/Poppins-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #F8FAFC;
+    color: #1E293B;
+}
+
+/* HEADER */
+
+header {
+    height: 90px;
+    padding: 0 80px;
+
+    background-color: #FFFFFF;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    line-height: 0.8;
+}
+
+#global {
+    color: #0F172A;
+}
+
+#la {
+    color: #F59E0B;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 35px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    color: #334155;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #F59E0B;
+}
+
+
+.inscrever {
+    background-color: #1D4ED8;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px 30px;
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+.inscrever:hover {
+    background-color: #1E40AF;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 600px;
+    padding: 80px;
+
+    background-color: #FFFFFF;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.hero p:first-child {
+    color: #F59E0B;
+    font-weight: bold;
+}
+
+
+.hero h2 {
+    color: #0F172A;
+
+    font-size: 48px;
+
+    width: 600px;
+}
+
+
+.hero p {
+    color: #64748B;
+
+    width: 550px;
+
+    line-height: 1.6;
+}
+
+
+.hero a {
+    display: inline-block;
+
+    margin-top: 30px;
+    margin-right: 15px;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+}
+
+
+.botao-principal {
+    background-color: #1D4ED8;
+    color: white;
+}
+
+
+.botao-principal:hover {
+    background-color: #1E40AF;
+}
+
+
+.botao-secundario {
+    border: 2px solid #1D4ED8;
+
+    color: #1D4ED8;
+}
+
+
+.botao-secundario:hover {
+    background-color: #1D4ED8;
+    color: white;
+}
+
+
+img {
+    width: 450px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+
+
+/* SECÇÕES */
+
+.sobre-escola,
+.cursos,
+.metodologia,
+.professores,
+.testemunhos,
+.contactos {
+    padding: 80px;
+}
+
+
+.sobre-escola {
+    background-color: #F8FAFC;
+}
+
+
+main h2 {
+    color: #0F172A;
+
+    font-size: 36px;
+
+    margin-bottom: 20px;
+}
+
+
+main p {
+    color: #64748B;
+
+    line-height: 1.6;
+}
+
+
+
+/* CURSOS */
+
+
+.lista-cursos {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+
+.cartao-curso {
+
+    background-color: white;
+
+    width: 30%;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    border: 1px solid #E2E8F0;
+
+    transition: 0.3s;
+}
+
+
+.cartao-curso h3 {
+
+    color: #1D4ED8;
+
+    margin-bottom: 15px;
+
+}
+
+
+.cartao-curso:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+
+}
+
+
+
+/* METODOLOGIA */
+
+
+.metodologia {
+
+    background-color: #F8FAFC;
+
+}
+
+
+.lista-metod {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin-top: 40px;
+
+}
+
+
+.metod {
+
+    background-color: white;
+
+    width: 45%;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    border: 1px solid #E2E8F0;
+
+}
+
+
+.metod h3 {
+
+    color: #1D4ED8;
+
+}
+
+
+
+/* PROFESSORES */
+
+
+.lista-prof {
+
+    display: flex;
+
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+
+.cartao-prof {
+
+    width: 25%;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    border: 1px solid #E2E8F0;
+
+}
+
+
+.cartao-prof h3 {
+
+    color: #1D4ED8;
+
+}
+
+
+.cartao-prof p:first-of-type {
+
+    color: #F59E0B;
+
+    font-weight: bold;
+
+}
+
+
+
+/* ESTATÍSTICAS */
+
+
+.estatisticas {
+
+    padding: 60px 80px;
+
+    background-color: #1D4ED8;
+
+
+    display: flex;
+
+    justify-content: space-between;
+
+    text-align: center;
+}
+
+
+.estatisticas h2 {
+
+    color: white;
+
+    font-size: 45px;
+
+}
+
+
+.estatisticas p {
+
+    color: white;
+
+}
+
+
+
+/* TESTEMUNHOS */
+
+
+.testemunhos {
+
+    background-color: white;
+
+}
+
+
+.test1,
+.test2,
+.test3 {
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 30%;
+
+    margin: 20px;
+
+    padding: 25px;
+
+    background-color: #F8FAFC;
+
+    border-radius: 20px;
+
+    border: 1px solid #E2E8F0;
+
+}
+
+
+.testemunhos h3 {
+
+    color: #1D4ED8;
+
+}
+
+
+/* CONTACTOS */
+
+
+.contactos {
+
+    background-color: #F8FAFC;
+
+}
+
+
+.contactos ul {
+
+    margin: 30px 0;
+
+}
+
+
+.contactos li {
+
+    list-style-type: none;
+
+    color: #64748B;
+
+    margin-bottom: 10px;
+
+}
+
+
+.contactos a {
+
+    background-color: #1D4ED8;
+
+    color: white;
+
+    padding: 15px 30px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+}
+
+
+.contactos a:hover {
+
+    background-color: #1E40AF;
+
+}
+
+
+
+/* FOOTER */
+
+
+footer {
+
+    background-color: #0F172A;
+
+    padding: 60px 80px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+}
+
+
+footer h2,
+footer h3 {
+
+    color: white;
+
+}
+
+
+footer p {
+
+    color: #CBD5E1;
+
+}
+
+
+footer ul {
+
+    margin-top: 20px;
+
+}
+
+
+footer li {
+
+    list-style-type: none;
+
+    margin-bottom: 10px;
+
+}
+
+
+footer a {
+
+    color: #CBD5E1;
+
+    text-decoration: none;
+
+}
+
+
+footer a:hover {
+
+    color: #F59E0B;
+
+}
+
+
+footer > p {
+
+    width: 100%;
+
+    text-align: center;
+
+    margin-top: 40px;
+
+    color: #94A3B8;
+
+}
