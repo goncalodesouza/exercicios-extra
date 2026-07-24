@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F5F5;
+  color: #1F2937;
+}
+
+header {
+  text-align: center;
+  background-color: #046A38;
+  width: 100vw;
+}
+
+header h1 {
+  color: #FFFFFF;
+  font-size: 3em;
+}
+
+header p {
+  color: #E5E7EB;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  list-style-type: none;
+  background-color: #03522B;
+  padding: 15px;
+}
+
+header nav ul a {
+  flex-direction: row;
+  font-size: 1.3em;
+  list-style-type: none;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header nav ul a:hover {
+  color: #FFD100;
+  background-color: #046A38;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+main section {
+  background-color: #FFFFFF;
+  border-bottom: 2px solid #E5E7EB;
+}
+
+h2 {
+  color: #046A38;
+  border-bottom: 3px solid #DA291C;
+  width: fit-content;
+  margin-bottom: 10px;
+  margin: 10px;
+}
+
+h3 {
+  color: #DA291C;
+  border-bottom: 3px solid #046A38;
+  width: fit-content;
+  margin-bottom: 10px;
+  margin: 10px;
+}
+
+p {
+  color: #374151;
+  text-align: justify;
+  margin: 10px;
+}
+
+.lista-geo,
+.lista-gastro {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cartao-geo,
+.cartao-gastro {
+  background-color: #FFFFFF;
+  border: 3px solid #E5E7EB;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.10);
+  width: 350px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.cartao-gastro {
+  background-color: #FFFFFF;
+  border: 3px solid #E5E7EB;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.10);
+  width: 450px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  align-self: center;
+  margin-top: 10px;
+  border: 3px solid #E5E7EB;
+}
+
+img:hover {
+  border-color: #DA291C;
+}
+
+.cartao-geo:hover,
+.cartao-gastro:hover {
+  background-color: #FAFAFA;
+  border-color: #046A38;
+  box-shadow: 3px 3px 6px rgba(4, 106, 56, 0.25);
+}
+
+.carrossel {
+  width: 100vw;
+  overflow: hidden;
+}
