@@ -33,6 +33,7 @@ header {
 
     display: flex;
     justify-content: space-between;
+    gap: 10px;
     align-items: center;
 }
 
@@ -82,7 +83,6 @@ nav a:hover {
 
 /* BOTÕES */
 
-
 .botao-principal {
     display: inline-block;
 
@@ -91,7 +91,24 @@ nav a:hover {
 
     text-decoration: none;
 
-    padding: 14px 30px;
+    white-space: nowrap;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 30px;
+
+    transition: 0.3s;
+}
+
+.botao-principal2 {
+    display: inline-block;
+
+    background-color: #2ECC71;
+    color: #FFFFFF;
+
+    text-decoration: none;
+
+    margin: 10px;
+    padding: 20px;
     border-radius: 30px;
 
     transition: 0.3s;
@@ -111,12 +128,11 @@ nav a:hover {
     color: #2ECC71;
 
     border: 1px solid #2ECC71;
-
-    padding: 14px 30px;
-
-    border-radius: 30px;
-
     text-decoration: none;
+
+    margin: 10px;
+    padding: 20px;
+    border-radius: 30px;
 
     transition: 0.3s;
 }
@@ -136,23 +152,17 @@ nav a:hover {
 
 
 .hero {
-
-    min-height: 600px;
-
-    padding: 80px;
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
+    gap: 80px;
 }
 
 
 .hero-texto {
-
-    width: 50%;
+    margin: 20px;
+    flex: 1;
+    max-width: 600px;
 
 }
 
@@ -199,15 +209,16 @@ nav a:hover {
 
 }
 
+.hero-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
 
 .hero-imagem img {
-
     width: 500px;
-
     border-radius: 20px;
-
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -247,12 +258,13 @@ nav a:hover {
 .cartoes {
 
     background-color: #111111;
+    width: 100%;
 
-    padding: 40px 80px;
 
     display: flex;
 
     justify-content: space-between;
+    align-items: stretch;
 
     gap: 20px;
 
@@ -261,7 +273,9 @@ nav a:hover {
 
 .cartao {
 
-    width: 25%;
+
+    flex: 1;
+    flex-shrink: 0;
 
     background-color: #181818;
 
@@ -311,7 +325,7 @@ nav a:hover {
 }
 
 
-.planos > p {
+.planos>p {
 
     color: #B3B3B3;
 
@@ -353,7 +367,7 @@ nav a:hover {
 
     border: 2px solid #2ECC71;
 
-    box-shadow: 0 0 30px rgba(46,204,113,0.25);
+    box-shadow: 0 0 30px rgba(46, 204, 113, 0.25);
 
 }
 
@@ -446,7 +460,7 @@ nav a:hover {
 }
 
 
-.testemunhos > p {
+.testemunhos>p {
 
     color: #B3B3B3;
 
