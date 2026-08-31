@@ -46,7 +46,6 @@ body {
 
 
 .select-profile img {
-  border: 3px solid #3b3b3b;
   width: 200px;
   height: 200px;
   border-radius: 5px;
@@ -106,5 +105,218 @@ body {
 
 .manage button:hover {
   border: 1px solid #F5F5F1;
+  color: #F5F5F1;
+}
+
+/*LANDING PAGE*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: 400;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: rgba(128, 128, 128, 0.500);
+  border-radius: 50px;
+}
+
+nav ul li a.active {
+  color: #F5F5F1;
+  background-color: rgba(128, 128, 128, 0.500);
+  font-weight: bolder;
+  border-radius: 50px;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 100px;
+  color: #F5F5F1;
+}
+
+.kids {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  padding: 1px 10px 1px 1px;
+}
+
+.kids:hover {
+  background-color: rgba(128, 128, 128, 0.500);
+}
+
+.kids a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: #F5F5F1;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.kids img,
+.my-profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+#isearch {
+  width: 0;
+  padding: 0;
+  border: none;
+  opacity: 0;
+  transition: 0.3s;
+  margin: 5px;
+}
+
+.search.active #isearch {
+  width: 250px;
+  padding: 0;
+  opacity: 1;
+  border: none;
+  background-color: #252525;
+  height: 40px;
+  width: 300px;
+}
+
+.search.active {
+  background-color: #252525;
+  border: 1px solid #9F9F9F;
+  border-radius: 50px;
+  padding: 5px 10px 5px 10px;
+  color: #3b3b3b;
+}
+
+.notifications {
+  margin: 0px 10px 0px 0px;
+  position: relative;
+}
+
+.notifications span {
+  cursor: pointer;
+}
+
+.notifications .notifs-list .notif h2 {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.notifications .notifs-list .notif p.info {
+  font-size: 12px;
+  color: #F5F5F1;
+}
+
+.notifications .notifs-list .notif p.date {
+  font-size: 10px;
+  color: #9F9F9F;
+}
+
+.notifs-list {
+  background-color: #151515;
+  border-radius: 10px;
+  width: 400px;
+  padding: 0px 10px 10px 10px;
+  display: none;
+  position: absolute;
+  right: 0;
+}
+
+.notifications.active .notifs-list {
+  display: block;
+}
+
+.notif {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0px 0px 0px;
+}
+
+.notif .notif-img img {
+  width: 120px;
+  height: 70px;
+  border-radius: 5px;
+}
+
+.my-profile {
+  display: flex;
+  align-items: center;
+}
+
+.my-profile {
+  position: relative;
+}
+
+.profile-options {
+  background-color: #151515;
+  border-radius: 10px;
+  width: 250px;
+  padding: 0px 10px 10px 10px;
+  display: none;
+  position: absolute;
+  top: 110%;
+  right: 0;
+}
+
+.my-profile.active .profile-options {
+  display: block;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin: 15px 0px 20px 0px;
+  gap: 10px;
+}
+
+#hr {
+  border-top: 1px solid #838383;
+  padding-top: 20px;
+}
+
+.profile-options .option a {
+  text-decoration: none;
   color: #F5F5F1;
 }

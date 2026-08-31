@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - Netflix</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <div class="left-side">
+      <section class="simbol">
+        <img src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/netflix/wordmark.svg" alt="Netflix"/>
+      </section>
+      <nav>
+        <ul>
+          <li><a href="" class="active">Accueil</a></li>
+          <li><a href="">Personnages</a></li>
+          <li><a href="">Séries</a></li>
+          <li><a href="">Films</a></li>
+          <li><a href="">Nouveautés les plus regardées</a></li>
+          <li><a href="">Ma liste</a></li>
+          <li><a href="">Explorer par langue</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="right-side">
+      <div class="search">
+        <button id="search-button">
+          <span class="material-symbols-outlined">
+            search
+          </span>
+        </button>
+        <input type="search" name="search" id="isearch" placeholder="Titres, personnes, genres">
+      </div>
+      
+      <div class="my-profile">
+        <img src="https://occ-0-2267-360.1.nflxso.net/dnm/api/v6/SO2HoVCx33X8phZh2pZZmQ4QgNY/AAAABZ7FSmr137QBZjGZaIZk-nhrzFdGXXtRFKdjdOSZgE8uRNeYB8OjnH6olUE2xPaDZwJmbfz3jF6OtKLKYeK_fjDz4aLYrgU.png?r=22c" alt="Jeunesse" class="default-ltr-yhcdbf-cache-j3xcrs e12zw41g1">
+        <span class="material-symbols-outlined" id="profile-button">
+arrow_drop_down
+</span>
+        <div class="profile-options">
+           <div class="option">
+              <a href="index.html ">
+                <p>Changer de compte</p>
+              </a>
+            </div>
+            <div class="option">
+              <svg viewBox="0 0 24 24" width="24" height="24" data-icon="CircleQuestionMarkMedium" data-icon-id=":r7t:" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" role="img"><path fill="currentColor" fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0m0 8c-1.317 0-2 .743-2 1.5H8C8 7.257 10.003 6 12 6s4 1.257 4 3.5c0 1.349-1.08 2.268-2.178 2.68-.265.1-.49.25-.636.411-.14.156-.186.292-.186.409v1h-2v-1c0-1.435 1.168-2.335 2.119-2.692.729-.274.881-.66.881-.808 0-.757-.683-1.5-2-1.5m1.5 8.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" clip-rule="evenodd"></path></svg>
+              <p>Centre d'aide</p>
+            </div>
+            <div class="option" id="hr">
+              <p>Se déconnecter</p>
+            </div>
+      </div>
+    </div>
+  </header>
+  <script src="script.js"></script>
+</body>
+</html>
