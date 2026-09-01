@@ -98,3 +98,10 @@ if (notifications && notificationButton) {
 
 }
 
+const imagem = document.querySelector("#sec1-img");
+const video = document.querySelector("#sec1-video");
+
+setTimeout(() => {
+  video.play();
+  imagem.style.opacity = "0";
+}, 2000);
