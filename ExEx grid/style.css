@@ -1,0 +1,1550 @@
+/* =========================================================
+CSS GRID LAYOUT — FICHA DE EXERCÍCIOS
+========================================================= */
+
+/* =========================================================
+
+1. RESET / CONFIGURAÇÕES GERAIS
+   ========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eeeeee;
+  color: #222222;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #222222;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 15px;
+}
+
+header p {
+  max-width: 800px;
+  margin: 8px auto;
+}
+
+main {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+section>h2 {
+  background-color: #222222;
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+section>p {
+  margin-bottom: 30px;
+}
+
+/* =========================================================
+2. CADA EXERCÍCIO
+========================================================= */
+
+.exercicio {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+}
+
+.exercicio h3 {
+  margin-bottom: 15px;
+  color: #333333;
+}
+
+.exercicio h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.exercicio p {
+  margin-bottom: 12px;
+}
+
+.exercicio ul,
+.exercicio ol {
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+code {
+  background-color: #eeeeee;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+pre {
+  background-color: #222222;
+  color: white;
+  padding: 15px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 15px 0;
+}
+
+/* =========================================================
+3. ÁREA ONDE OS EXERCÍCIOS DE GRID ACONTECEM
+========================================================= */
+
+.grid-exercicio {
+  width: 100%;
+  min-height: 250px;
+
+  ``` margin-top: 25px;
+  padding: 15px;
+
+  background-color: #dddddd;
+  border: 3px dashed #888888;
+
+  /*
+    IMPORTANTE:
+
+    As propriedades de Grid dos exercícios
+    serão colocadas nas classes:
+
+    .grid-1
+    .grid-2
+    .grid-3
+    ...
+    .grid-55
+*/
+  ```
+}
+
+/* =========================================================
+4. ELEMENTOS DENTRO DOS GRIDS
+========================================================= */
+
+.grid-exercicio>div {
+  background-color: #333333;
+  color: white;
+
+  ``` min-height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 15px;
+
+  border-radius: 5px;
+  ```
+}
+
+/* =========================================================
+5. ALGUNS ELEMENTOS ESPECIAIS
+========================================================= */
+
+.grande {
+  min-height: 120px !important;
+}
+
+/* =========================================================
+6. ÁREAS PARA GRID-TEMPLATE-AREAS
+========================================================= */
+
+.header-area {
+  background-color: #333333 !important;
+}
+
+.menu-area {
+  background-color: #555555 !important;
+}
+
+.content-area {
+  background-color: #777777 !important;
+}
+
+.sidebar-area {
+  background-color: #444444 !important;
+}
+
+.footer-area {
+  background-color: #222222 !important;
+}
+
+#
+/* =========================================================
+
+# NÍVEL 1 — FUNDAMENTOS
+
+========================================================= */
+
+/* =========================================================
+EXERCÍCIO 1
+display: grid
+========================================================= */
+
+.grid-1 {
+
+  ```
+  /* TU FAZES AQUI */
+  ``` display: grid;
+}
+
+/* =========================================================
+EXERCÍCIO 2
+grid-template-columns
+========================================================= */
+
+.grid-2 {
+
+  /*
+    Objetivo:
+    criar 3 colunas iguais.
+
+    Propriedade:
+    grid-template-columns
+*/
+
+  /* TU FAZES AQUI */
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+/* =========================================================
+EXERCÍCIO 3
+4 colunas
+========================================================= */
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  ```
+  /*
+    Objetivo:
+    criar 4 colunas iguais.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 4
+fr
+========================================================= */
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  ```
+  /*
+    Objetivo:
+    3 colunas iguais utilizando fr.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 5
+1fr + 2fr
+========================================================= */
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  ```
+  /*
+    Objetivo:
+
+    Coluna 1 = 1 parte
+    Coluna 2 = 2 partes
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 6
+px + fr
+========================================================= */
+
+.grid-6 {
+  display: grid;
+  grid-template-columns: 200px auto;
+  ```
+  /*
+    Objetivo:
+
+    Primeira coluna = 200px
+    Segunda coluna = restante do espaço
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 7
+repeat()
+========================================================= */
+
+.grid-7 {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  ```
+  /*
+    Objetivo:
+    6 colunas iguais utilizando repeat().
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 8
+grid-template-rows
+========================================================= */
+
+.grid-8 {
+  display: grid;
+  grid-template-rows: 100px 200px;
+  ```
+  /*
+    Objetivo:
+
+    2 linhas:
+
+    linha 1 = 100px
+    linha 2 = 200px
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 9
+rows + fr
+========================================================= */
+
+.grid-9 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  ```
+  /*
+    Objetivo:
+    2 linhas iguais utilizando 1fr.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 10
+gap
+========================================================= */
+
+.grid-10 {
+  display: grid;
+  gap: 20px;
+  ```
+  /*
+    Objetivo:
+    espaço de 20px entre linhas e colunas.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 11
+column-gap
+========================================================= */
+
+.grid-11 {
+
+  ```
+  /*
+    Objetivo:
+    30px apenas entre as colunas.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 12
+row-gap
+========================================================= */
+
+.grid-12 {
+
+  ```
+  /*
+    Objetivo:
+    40px apenas entre as linhas.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+#
+/* =========================================================
+
+# NÍVEL 2 — POSICIONAMENTO
+
+========================================================= */
+
+/* =========================================================
+EXERCÍCIO 13
+grid-column
+========================================================= */
+
+.grid-13 {
+
+  ```
+  /*
+    Objetivo:
+
+    O elemento 1 deve ocupar
+    duas colunas.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+.grid-13>div:first-child {
+
+  ```
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 14
+grid-row
+========================================================= */
+
+.grid-14 {
+
+  ```
+  /*
+    Objetivo:
+
+    O elemento 1 deve ocupar
+    duas linhas.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+.grid-14>div:first-child {
+
+  ```
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 15
+grid-column-start
+========================================================= */
+
+.grid-15 {
+
+  ```
+  /*
+    Objetivo:
+
+    O primeiro elemento deve começar
+    na coluna 2.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+.grid-15>div:first-child {
+
+  ```
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 16
+grid-column-start + grid-column-end
+========================================================= */
+
+.grid-16 {
+
+  ```
+  /* TU FAZES AQUI */
+  ```
+}
+
+.grid-16>div:first-child {
+
+  ```
+  /*
+    Objetivo:
+    ocupar duas colunas.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 17
+grid-row-start + grid-row-end
+========================================================= */
+
+.grid-17 {
+
+  ```
+  /* TU FAZES AQUI */
+  ```
+}
+
+.grid-17>div:first-child {
+
+  ```
+  /*
+    Objetivo:
+    ocupar duas linhas.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 18
+span em colunas
+========================================================= */
+
+.grid-18 {
+
+  ```
+  /* TU FAZES AQUI */
+  ```
+}
+
+.grid-18>div:first-child {
+
+  ```
+  /*
+    Objetivo:
+    ocupar 3 colunas utilizando span.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 19
+span em linhas
+========================================================= */
+
+.grid-19 {
+
+  ```
+  /* TU FAZES AQUI */
+  ```
+}
+
+.grid-19>div:first-child {
+
+  ```
+  /*
+    Objetivo:
+    ocupar 3 linhas utilizando span.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 20
+coluna + linha
+========================================================= */
+
+.grid-20 {
+
+  ```
+  /* TU FAZES AQUI */
+  ```
+}
+
+.grid-20>div:first-child {
+
+  ```
+  /*
+    Objetivo:
+
+    2 colunas
+    2 linhas
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 21
+posicionamento específico
+========================================================= */
+
+.grid-21 {
+
+  ```
+  /* TU FAZES AQUI */
+  ```
+}
+
+.grid-21>div:first-child {
+
+  ```
+  /*
+    Objetivo:
+
+    elemento 1:
+
+    primeira linha
+    segunda coluna
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 22
+layout com posicionamento
+========================================================= */
+
+.grid-22 {
+
+  ```
+  /*
+    Objetivo:
+
+    ┌───────────────┐
+    │       1       │
+    ├───────┬───────┤
+    │   2   │   3   │
+    ├───────┼───────┤
+    │   4   │   5   │
+    └───────┴───────┘
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+.grid-22>div:first-child {
+
+  ```
+  /* TU FAZES AQUI */
+  ```
+}
+
+#
+/* =========================================================
+
+# NÍVEL 3 — GRID AREAS
+
+========================================================= */
+
+/* =========================================================
+EXERCÍCIO 23
+grid-template-areas
+========================================================= */
+
+.grid-23 {
+
+  ```
+  /*
+    Objetivo:
+
+    ┌───────────────┐
+    │     HEADER    │
+    ├───────┬───────┤
+    │ MENU  │CONTENT│
+    ├───────┴───────┤
+    │     FOOTER    │
+    └───────────────┘
+
+    Cria as áreas:
+
+    header
+    menu
+    content
+    footer
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 24
+grid-area
+========================================================= */
+
+.grid-24 {
+
+  ```
+  /*
+    Primeiro cria as áreas no container.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+.grid-24 .header-area {
+
+  ```
+  /* TU FAZES AQUI */
+  ```
+}
+
+.grid-24 .menu-area {
+
+  ```
+  /* TU FAZES AQUI */
+  ```
+}
+
+.grid-24 .content-area {
+
+  ```
+  /* TU FAZES AQUI */
+  ```
+}
+
+.grid-24 .footer-area {
+
+  ```
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 25
+layout completo
+========================================================= */
+
+.grid-25 {
+
+  ```
+  /*
+    Objetivo:
+
+    HEADER
+    MENU + CONTENT
+    FOOTER
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 26
+sidebar
+========================================================= */
+
+.grid-26 {
+
+  ```
+  /*
+    Objetivo:
+
+    HEADER
+
+    MENU | CONTENT | SIDEBAR
+
+    FOOTER
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+#
+/* =========================================================
+
+# NÍVEL 4 — ALINHAMENTO
+
+========================================================= */
+
+/* =========================================================
+EXERCÍCIO 27
+justify-items
+========================================================= */
+
+.grid-27 {
+
+  ```
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 28
+align-items
+========================================================= */
+
+.grid-28 {
+
+  ```
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 29
+place-items
+========================================================= */
+
+.grid-29 {
+
+  ```
+  /*
+    Objetivo:
+    centralizar horizontalmente
+    e verticalmente os elementos.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 30
+justify-content
+========================================================= */
+
+.grid-30 {
+
+  ```
+  /*
+    Objetivo:
+    colocar o Grid inteiro
+    no centro horizontal.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 31
+align-content
+========================================================= */
+
+.grid-31 {
+
+  ```
+  /*
+    Objetivo:
+    colocar o Grid inteiro
+    no centro vertical.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 32
+place-content
+========================================================= */
+
+.grid-32 {
+
+  ```
+  /*
+    Objetivo:
+    centralizar o Grid inteiro
+    horizontalmente e verticalmente.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 33
+justify-self
+========================================================= */
+
+.grid-33 {
+
+  ```
+  /* TU FAZES AQUI */
+  ```
+}
+
+.grid-33>div:first-child {
+
+  ```
+  /*
+    Apenas o elemento 1
+    deve ficar no centro horizontal.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 34
+align-self
+========================================================= */
+
+.grid-34 {
+
+  ```
+  /* TU FAZES AQUI */
+  ```
+}
+
+.grid-34>div:first-child {
+
+  ```
+  /*
+    Apenas o elemento 1
+    deve ficar no centro vertical.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 35
+place-self
+========================================================= */
+
+.grid-35 {
+
+  ```
+  /* TU FAZES AQUI */
+  ```
+}
+
+.grid-35>div:first-child {
+
+  ```
+  /*
+    Apenas o elemento 1
+    deve ficar exatamente no centro.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+#
+/* =========================================================
+
+# NÍVEL 5 — GRID AUTOMÁTICO
+
+========================================================= */
+
+/* =========================================================
+EXERCÍCIO 36
+grid-auto-rows
+========================================================= */
+
+.grid-36 {
+
+  ```
+  /*
+    Objetivo:
+    linhas criadas automaticamente = 100px.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 37
+grid-auto-columns
+========================================================= */
+
+.grid-37 {
+
+  ```
+  /*
+    Objetivo:
+    colunas automáticas = 150px.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 38
+grid-auto-flow: row
+========================================================= */
+
+.grid-38 {
+
+  ```
+  /*
+    Objetivo:
+    colocar os elementos automaticamente
+    seguindo as linhas.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 39
+grid-auto-flow: column
+========================================================= */
+
+.grid-39 {
+
+  ```
+  /*
+    Objetivo:
+    colocar os elementos automaticamente
+    seguindo as colunas.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 40
+grid-auto-flow: dense
+========================================================= */
+
+.grid-40 {
+
+  ```
+  /*
+    Primeiro cria o layout.
+
+    Depois experimenta:
+
+    grid-auto-flow: dense;
+
+    Observa como o Grid tenta
+    preencher espaços vazios.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+.grid-40 .grande {
+
+  ```
+  /*
+    Este elemento é maior
+    para criar espaços no Grid.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+#
+/* =========================================================
+
+# NÍVEL 6 — RESPONSIVE GRID
+
+========================================================= */
+
+/* =========================================================
+EXERCÍCIO 41
+minmax()
+========================================================= */
+
+.grid-41 {
+
+  ```
+  /*
+    Objetivo:
+
+    Cada coluna deve ter no mínimo
+    150px e poder crescer.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 42
+repeat() + minmax()
+========================================================= */
+
+.grid-42 {
+
+  ```
+  /*
+    Objetivo:
+
+    Combinar:
+
+    repeat()
+    minmax()
+
+    As colunas devem adaptar-se
+    ao espaço disponível.
+
+    Mínimo:
+    200px
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 43
+auto-fit
+========================================================= */
+
+.grid-43 {
+
+  ```
+  /*
+    Objetivo:
+
+    Criar um Grid responsivo
+    utilizando auto-fit.
+
+    Os cartões devem adaptar-se
+    ao tamanho do ecrã.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 44
+auto-fill
+========================================================= */
+
+.grid-44 {
+
+  ```
+  /*
+    Objetivo:
+
+    Criar um Grid responsivo
+    utilizando auto-fill.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 45
+auto-fit vs auto-fill
+========================================================= */
+
+.grid-45 {
+
+  ```
+  /*
+    Experimenta:
+
+    auto-fit
+
+    e depois:
+
+    auto-fill
+
+    Redimensiona a janela
+    e observa a diferença.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+#
+/* =========================================================
+
+# NÍVEL 7 — SHORTHANDS
+
+========================================================= */
+
+/* =========================================================
+EXERCÍCIO 46
+grid-template
+========================================================= */
+
+.grid-46 {
+
+  ```
+  /*
+    Objetivo:
+
+    Criar o layout utilizando
+    grid-template.
+
+    Não utilizes várias propriedades
+    separadas se conseguires resolver
+    com a shorthand.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 47
+grid
+========================================================= */
+
+.grid-47 {
+
+  ```
+  /*
+    Objetivo:
+
+    Experimentar a shorthand:
+
+    grid
+
+    Tenta substituir várias
+    propriedades por uma declaração.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+EXERCÍCIO 48
+combinação
+========================================================= */
+
+.grid-48 {
+
+  ```
+  /*
+    Combina:
+
+    repeat()
+    minmax()
+    gap
+    alinhamento
+
+    Objetivo:
+    criar uma grelha moderna
+    e responsiva.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+#
+/* =========================================================
+
+# NÍVEL 8 — DESAFIOS
+
+========================================================= */
+
+/* =========================================================
+DESAFIO 49 — GALERIA
+========================================================= */
+
+.grid-49 {
+
+  ```
+  /*
+    Não existe uma propriedade
+    específica indicada.
+
+    Tu decides como resolver.
+
+    Requisitos:
+
+    - 3 colunas
+    - várias linhas
+    - gap
+    - um elemento ocupa 2 colunas
+    - outro ocupa 2 linhas
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+DESAFIO 50 — PRODUTO
+========================================================= */
+
+.grid-50 {
+
+  ```
+  /*
+    Objetivo:
+
+    ┌──────────────┬──────────────┐
+    │              │              │
+    │    IMAGEM    │    NOME      │
+    │              │    PREÇO     │
+    │              │    BOTÃO     │
+    ├──────────────┴──────────────┤
+    │         DESCRIÇÃO           │
+    └─────────────────────────────┘
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+DESAFIO 51 — DASHBOARD
+========================================================= */
+
+.grid-51 {
+
+  ```
+  /*
+    Cria:
+
+    HEADER
+    SIDEBAR
+    CONTENT
+
+    CARD 1
+    CARD 2
+    CARD 3
+
+    FOOTER
+
+    Tu decides a estrutura.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+DESAFIO 52 — PORTFOLIO
+========================================================= */
+
+.grid-52 {
+
+  ```
+  /*
+    Cria uma estrutura de portfolio.
+
+    Deve existir:
+
+    HEADER
+    APRESENTAÇÃO
+
+    6 PROJETOS
+
+    CONTACTOS
+    FOOTER
+
+    Utiliza Grid.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+DESAFIO 53 — NETFLIX
+========================================================= */
+
+.grid-53 {
+
+  ```
+  /*
+    Cria uma grelha semelhante
+    a uma plataforma de streaming.
+
+    Obrigatório:
+
+    repeat()
+    minmax()
+    gap
+
+    O Grid deve ser responsivo.
+
+    Um filme deve ter mais destaque.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+DESAFIO 54 — LAYOUT LIVRE
+========================================================= */
+
+.grid-54 {
+
+  ```
+  /*
+    Não existe solução definida.
+
+    Tens:
+
+    HEADER
+    MENU
+    HERO
+    ABOUT
+
+    SERVICE 1
+    SERVICE 2
+    SERVICE 3
+
+    GALLERY
+    CONTACT
+    FOOTER
+
+    Cria o teu próprio layout.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+DESAFIO 55 — GRID MASTER
+========================================================= */
+
+.grid-55 {
+
+  ```
+  /*
+    DESAFIO FINAL
+
+    Aqui tens de utilizar
+    tudo aquilo que aprendeste.
+
+    Obrigatório utilizar:
+
+    display: grid
+    grid-template-columns
+    grid-template-rows
+    fr
+    repeat()
+    gap
+
+    grid-column
+    grid-row
+    span
+
+    grid-template-areas
+    grid-area
+
+    justify-items
+    align-items
+    justify-content
+    align-content
+
+    justify-self
+    align-self
+
+    minmax()
+
+    auto-fit OU auto-fill
+
+
+    OBJETIVO:
+
+    Criar um layout completo
+    e responsivo.
+
+    Não existe uma solução única.
+*/
+
+  /* TU FAZES AQUI */
+  ```
+}
+
+/* =========================================================
+7. FOOTER
+========================================================= */
+
+footer {
+  background-color: #222222;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer p {
+  margin: 5px;
+}
+
+/* =========================================================
+8. RESPONSIVIDADE DA PRÓPRIA FICHA
+========================================================= */
+
+@media (max-width: 700px) {
+
+  ``` main {
+    width: 95%;
+  }
+
+  .exercicio {
+    padding: 18px;
+  }
+
+  .grid-exercicio {
+    padding: 10px;
+  }
+
+  pre {
+    font-size: 13px;
+  }
+
+  ```
+}
