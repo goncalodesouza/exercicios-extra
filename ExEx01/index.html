@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TravelFlix</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,8 +13,8 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=visibility"
     />
   </head>
   <body>
@@ -22,28 +24,32 @@
       <p>Entra na tua conta para continuar a explorar.</p>
     </header>
     <main>
-      <div class="inputs">
+      <form>
         <div class="login-input">
-          <label for="iemail">Email</label>
-          <input type="email" id="iemail" placeholder="O teu email" />
+          <div class="email">
+            <label for="iemail">Email</label>
+            <input type="email" id="iemail" placeholder="O teu email" />
+          </div>
+          <div class="password">
+            <label for="ipassword">Palavra-passe</label>
+            <div class="input-span">
+              <input
+                type="password"
+                id="ipassword"
+                placeholder="A tua palavra-passe"
+              />
+              <span class="material-symbols-outlined">visibility</span>
+            </div>
+          </div>
         </div>
-        <form>
-          <label for="ipassword">Palavra-passe</label>
-          <input
-            type="password"
-            id="ipassword"
-            placeholder="A tua palavra-passe"
-          />
-          <span class="material-symbols-outlined">visibility</span>
-        </form>
         <div class="forgot-pass">
           <a href="#">Esqueceste-te da palavra-passe?</a>
         </div>
         <div class="login-button">
           <button type="submit">Entrar</button>
         </div>
-      </div>
-      <p>-ou-</p>
+      </form>
+      <p id="ou">-ou-</p>
       <div class="continue-with">
         <div class="google">
           <a href="#">Continuar com o Google</a>
