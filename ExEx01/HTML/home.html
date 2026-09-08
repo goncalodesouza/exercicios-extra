@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TravelFlix</title>
     <link rel="stylesheet" href="../CSS/home.css" />
+    <script src="home.js"></script>
     <script
       src="https://kit.fontawesome.com/606c2b6b04.js"
       crossorigin="anonymous"
@@ -16,295 +17,44 @@
       <nav>
         <ul>
           <li>
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i
-            ></a>
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
           </li>
           <li>
-            <a href="#"><i class="fa-solid fa-heart" id="coracao"></i></i></a>
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+            <details id="profile">
+              <summary>
+                <i class="fa-solid fa-circle-user"></i>
+              </summary>
+
+              <div class="profile-menu">
+                <a href="#">Perfil <i class="fa-solid fa-circle-user"></i></a>
+                <a href="#">Lista <i class="fa-solid fa-heart"></i></a>
+                <a href="#">Ajustes <i class="fa-solid fa-gear"></i></a>
+                <a href="#"
+                  >Sair <i class="fa-solid fa-right-from-bracket"></i
+                ></a>
+              </div>
+            </details>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <section id="hero">
-        <h2>Lisboa, Portugal</h2>
-        <p>Descobre uma das cidades mais incríveis da Europa.</p>
-        <div class="hero-buttons">
-          <button>Explorar</button>
-          <button id="minha-lista">Minha lista</button>
-        </div>
-      </section>
-      <hr>
-      <section id="viagens-destaques">
-        <div class="destaques">
-          <h2>Destinos em destaque</h2>
-          <div class="destaques-lista">
-            <div class="viagens" id="portugal">
-              <a href="">
-                <h3>🇵🇹 Portugal</h3>
-              </a>
-            </div>
-            <div class="viagens" id="franca">
-              <a href="">
-                <h3>🇫🇷 França</h3>
-              </a>
-            </div>
-            <div class="viagens" id="espanha">
-              <a href="">
-                <h3>🇪🇸 Espanha</h3>
-              </a>
-            </div>
-            <div class="viagens" id="italia">
-              <a href="">
-                <h3>🇮🇹 Itália</h3>
-              </a>
-            </div>
-            <div class="viagens" id="brasil">
-              <a href="">
-                <h3>🇧🇷 Brasil</h3>
-              </a>
-            </div>
-            <div class="viagens" id="japao">
-              <a href="">
-                <h3>🇯🇵 Japão</h3>
-              </a>
-            </div>
-            <div class="viagens" id="grecia">
-              <a href="">
-                <h3>🇬🇷 Grécia</h3>
-              </a>
-            </div>
-              <div class="viagens" id="suica">
-              <a href="">
-                <h3>🇨🇭 Suíça</h3>
-            </a>
-            </div>
-            <div class="viagens" id="estados-unidos">
-              <a href="">
-                <h3>🇺🇸 Estados Unidos</h3>
-              </a>
-            </div>
-            <div class="viagens" id="noruega">
-              <a href="">
-                <h3>🇳🇴 Noruega</h3>
-              </a>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="recomendacoes">
-          <h2>Recomendações para ti</h2>
-          <div class="recomendacoes-lista">
-            <div class="viagens" id="roma">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇮🇹 Roma</h3>
-              </a>
-            </div>
-            <div class="viagens" id="toquio">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇯🇵 Tóquio</h3>
-              </a>
-            </div>
-            <div class="viagens" id="paris">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇫🇷 Paris</h3>
-              </a>
-            </div>
-            <div class="viagens" id="santorini">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇬🇷 Santorini</h3>
-              </a>
-            </div>
-            <div class="viagens" id="madeira">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇵🇹 Madeira</h3>
-              </a>
-            </div>
-            <div class="viagens" id="barcelona">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇪🇸 Barcelona</h3>
-              </a>
-            </div>
-            <div class="viagens" id="interlaken">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇨🇭 Interlaken</h3>
-              </a>
-            </div>
-            <div class="viagens" id="rio-janeiro">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇧🇷 Rio de Janeiro</h3>
-              </a>
-            </div>
-            <div class="viagens" id="lofoten">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇳🇴 Lofoten</h3>
-              </a>
-            </div>
-            <div class="viagens" id="nova-iorque">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇺🇸 Nova Iorque</h3>
-              </a>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="praias">
-          <h2>Praias</h2>
-          <div class="praias-lista">
-            <div class="praia">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇲🇻 Maldivas</h3>
-              </a>
-            </div>
-            <div class="praia">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇬🇷 Santorini</h3>
-              </a>
-            </div>
-            <div class="praia">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇵🇹 Algarve</h3>
-              </a>
-            </div>
-            <div class="praia">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇪🇸 Maiorca</h3>
-              </a>
-            </div>
-            <div class="viagens">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇧🇷 Fernando de Noronha</h3>
-              </a>
-            </div>
-            <div class="praia">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇮🇹 Costa Amalfitana</h3>
-              </a>
-            </div>
-            <div class="praia">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇫🇷 Côte d’Azur</h3>
-              </a>
-            </div>
-            <div class="praia">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇵🇭 Palawan</h3>
-              </a>
-            </div>
-            <div class="praia">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇦🇺 Gold Coast</h3>
-              </a>
-            </div>
-            <div class="praia">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇹🇭 Phuket</h3>
-              </a>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="cidades-europeias">
-          <h2>Cidades Europeias</h2>
-          <div class="recomendacoes-lista">
-            <div class="viagens">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇵🇱 Cracóvia</h3>
-              </a>
-            </div>
-            <div class="viagens">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇭🇺 Budapeste</h3>
-              </a>
-            </div>
-            <div class="viagens">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇵🇹 Porto</h3>
-              </a>
-            </div>
-            <div class="viagens">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇩🇰 Copenhaga</h3>
-              </a>
-            </div>
-            <div class="viagens">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇸🇪 Estocolmo</h3>
-              </a>
-            </div>
-            <div class="viagens">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇮🇪 Dublin</h3>
-              </a>
-            </div>
-            <div class="viagens">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇭🇷 Dubrovnik</h3>
-              </a>
-            </div>
-            <div class="viagens">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇷🇴 Bucareste</h3>
-              </a>
-            </div>
-            <div class="viagens">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇸🇮 Liubliana</h3>
-              </a>
-            </div>
-            <div class="viagens">
-              <a href="">
-                <img src="" alt="" />
-                <h3>🇧🇪 Bruxelas</h3>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+    <main></main>
     <footer>
       <nav>
         <ul>
           <li>
             <a href="#"><i class="fa-solid fa-house"></i></a>
           </li>
-          <li> 
+          <li>
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa-solid fa-heart" id="coracao"></i></a>
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
           </li>
           <li>
             <a href="#"><i class="fa-solid fa-circle-user"></i></a>

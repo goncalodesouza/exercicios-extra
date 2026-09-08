@@ -11,186 +11,66 @@ body {
   font-variant: small-caps;
 }
 header {
-  background-color: #0f0f0f;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px;
+  padding: 10px;
 }
 h1 {
   color: #000000;
-  -webkit-text-stroke: 0.7px #e50914;
+  -webkit-text-stroke: 1px #db0000;
 }
-h1 span {
-  color: #e50914;
+span {
+  color: #db0000;
 }
 nav ul {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+nav ul li {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-nav ul li {
-  list-style: none;
-}
-header nav ul li a:has(#coracao).active {
-  color: #b20710;
-}
 a {
-  color: #b3b3b3;
+  color: #dedede;
+  text-decoration: none;
 }
-a.active {
-  color: #ffffff;
-}
-#hero {
+details {
   position: relative;
-  min-height: 300px;
-  background-image: url("../imagens/lisboa.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 10px;
-  min-height: 300px;
-
-  background-image:
-    linear-gradient(
-      to top,
-      rgba(15, 15, 15, 1) 0%,
-      rgba(15, 15, 15, 0.7) 25%,
-      rgba(15, 15, 15, 0) 55%
-    ),
-    url("../imagens/lisboa.jpg");
-
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
 }
-
-#hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
+summary {
+  list-style: none;
+  cursor: pointer;
+  color: #dedede;
 }
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
-#hero h2 {
-  color: #b3b3b3;
-}
-#hero p {
-  color: #e5e5e5;
-}
-#hero button {
-  background-color: #e50914;
-  color: #ffffff;
-  border: none;
-  width: 80px;
-  height: 30px;
-  border-radius: 20px;
-  font-weight: bold;
-}
-#hero #minha-lista {
-  background-color: #333333;
-  color: #ffffff;
-}
-.hero-buttons {
-  display: flex;
-  gap: 10px;
-}
-h2 {
-  color: #ffffff;
-}
-.destaques-lista,
-.recomendacoes-lista,
-.praias-lista {
-  display: flex;
-  gap: 10px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 20px 0;
-}
-.destaques-lista::-webkit-scrollbar,
-.recomendacoes-lista::-webkit-scrollbar,
-.praias-lista::-webkit-scrollbar {
+summary::-webkit-details-marker {
   display: none;
 }
-.destaques-lista,
-.recomendacoes-lista,
-.praias-lista {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+summary {
+  list-style: none;
 }
-.viagens,
-.praia {
-  background-image: url("../imagens/lisboa.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 120px;
-  flex: 0 0 120px;
+summary::marker {
+  display: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+.profile-menu {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  transition: transform 0.3s ease;
+  align-items: flex-end;
+  background-color: #0f0f0f;
+  border: 3px solid #000000;
+  position: absolute;
+  right: 2px;
+  width: 150px;
 }
-.viagens a,
-.praia a {
+.profile-menu a {
+  color: #f5f5f5;
   text-decoration: none;
-  color: #e50914;
-}
-#portugal {
-  background-image: url("../imagens/portugal.jpg");
-  background-size: cover;
-  background-position: center;
-}
-#franca {
-  background-image: url("../imagens/franca.jpg");
-  background-size: cover;
-  background-position: center;
-}
-#espanha {
-  background-image: url("../imagens/espana.jpg");
-  background-size: cover;
-  background-position: center;
-}
-#italia {
-  background-image: url("../imagens/italia.jpg");
-  background-size: cover;
-  background-position: center;
-}
-#brasil {
-  background-image: url("../imagens/brasil.jpg");
-  background-size: cover;
-  background-position: center;
-}
-#japao {
-  background-image: url("../imagens/japao.jpg");
-  background-size: cover;
-  background-position: center;
-}
-#grecia {
-  background-image: url("../imagens/grecia.jpg");
-  background-size: cover;
-  background-position: center;
-}
-#estados-unidos {
-  background-image: url("../imagens/eua.jpg");
-  background-size: cover;
-  background-position: center;
-}
-#noruega {
-  background-image: url("../imagens/noruega.jpg");
-  background-size: cover;
-  background-position: center;
-}
-#suica {
-  background-image: url("../imagens/suica.jpg");
-  background-size: cover;
-  background-position: center;
+  margin: 5px;
 }
 footer {
   display: flex;
@@ -215,8 +95,10 @@ footer nav {
 footer nav ul {
   display: flex;
 }
-footer nav ul li a,
-footer nav ul li a i#coracao {
+footer nav ul li {
+  list-style-type: none;
+}
+footer nav ul li a {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -227,7 +109,4 @@ footer nav ul li a.active {
   background-color: #7d7d7dbd;
   border-radius: 50px;
   color: #000000;
-}
-footer nav ul li a:has(#coracao).active {
-  color: #b20710;
 }
