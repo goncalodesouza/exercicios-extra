@@ -142,6 +142,56 @@ h2 {
   text-decoration: none;
   color: #e50914;
 }
+#portugal {
+  background-image: url("../imagens/portugal.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#franca {
+  background-image: url("../imagens/franca.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#espanha {
+  background-image: url("../imagens/espana.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#italia {
+  background-image: url("../imagens/italia.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#brasil {
+  background-image: url("../imagens/brasil.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#japao {
+  background-image: url("../imagens/japao.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#grecia {
+  background-image: url("../imagens/grecia.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#estados-unidos {
+  background-image: url("../imagens/eua.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#noruega {
+  background-image: url("../imagens/noruega.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#suica {
+  background-image: url("../imagens/suica.jpg");
+  background-size: cover;
+  background-position: center;
+}
 footer {
   display: flex;
   justify-content: center;
