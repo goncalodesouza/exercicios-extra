@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     {
       nome: "Portugal",
+
       imagem: "../imagens/portugal.jpg",
+
       descricao: "Portugal · Europa · Cultura · História · Natureza",
     },
 
@@ -22,7 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     {
       nome: "Espanha",
+
       imagem: "../imagens/espanha.jpg",
+
       descricao: "Espanha · Europa · Cultura · História · Praias",
     },
 
@@ -30,7 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     {
       nome: "França",
+
       imagem: "../imagens/franca.jpg",
+
       descricao: "França · Europa · Cultura · História · Gastronomia",
     },
 
@@ -38,7 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     {
       nome: "Itália",
+
       imagem: "../imagens/italia.jpg",
+
       descricao: "Itália · Europa · Cultura · História · Gastronomia",
     },
 
@@ -46,7 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     {
       nome: "Japão",
+
       imagem: "../imagens/japao.jpg",
+
       descricao: "Japão · Ásia · Cultura · História · Natureza",
     },
 
@@ -54,7 +64,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     {
       nome: "Brasil",
+
       imagem: "../imagens/brasil.jpg",
+
       descricao: "Brasil · América do Sul · Praias · Natureza · Cultura",
     },
 
@@ -62,7 +74,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     {
       nome: "Grécia",
+
       imagem: "../imagens/grecia.jpg",
+
       descricao: "Grécia · Europa · História · Praias · Cultura",
     },
 
@@ -70,7 +84,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     {
       nome: "Suíça",
+
       imagem: "../imagens/suica.jpg",
+
       descricao: "Suíça · Europa · Montanhas · Natureza · Aventura",
     },
 
@@ -78,7 +94,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     {
       nome: "Estados Unidos",
+
       imagem: "../imagens/eua.jpg",
+
       descricao: "Estados Unidos · América do Norte · Cidades · Cultura",
     },
 
@@ -86,7 +104,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     {
       nome: "Noruega",
+
       imagem: "../imagens/noruega.jpg",
+
       descricao: "Noruega · Europa · Natureza · Montanhas · Aventura",
     },
   ];
@@ -128,7 +148,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 10000);
 
   /*
+
         Fecha o menu do perfil quando clicamos fora
+
   */
 
   document.addEventListener("click", (event) => {
