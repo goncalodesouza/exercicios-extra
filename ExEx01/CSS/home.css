@@ -214,7 +214,8 @@ hr {
   color: #dedede;
 }
 #country-list,
-#city-list {
+#city-list,
+#island-list {
   display: flex;
   width: 100%;
   gap: 10px;
@@ -233,6 +234,7 @@ hr {
   justify-content: flex-end;
   scroll-snap-align: start;
   position: relative;
+  border-radius: 10px;
 }
 .travel h3 {
   font-weight: bold;
@@ -245,7 +247,7 @@ footer {
 
   position: fixed;
 
-  bottom: 1;
+  bottom: 0;
 
   left: 0;
 
