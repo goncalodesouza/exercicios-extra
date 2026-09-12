@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  grid-template-columns: 10px 500px 20px auto;
+  grid-template-rows: 10px auto 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-variant: small-caps;
+  background-color: #f4f1ea;
+}
+aside {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 3px solid #c62828;
+  border-radius: 15px;
+  height: 100vh;
+  width: 500px;
+  background-color: #1f3a32;
+}
+aside img {
+  width: 300px;
+  height: 300px;
+  border: 5px solid #183229;
+  outline: 3px solid #c62828;
+  border-radius: 50%;
+  margin: 20px 0px 10px 0px;
+}
+#dev-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#dev-info h1 {
+  font-size: 3.7em;
+  font-weight: bolder;
+  margin: 5px 0px -5px 0px;
+  color: #ffffff;
+}
+#dev-info #profissao {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin: 0px 0px 5px 0px;
+  color: #dcd3c3;
+}
+#dev-info #descricao {
+  text-align: justify;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 10px 0 10px 0;
+  color: #dcd3c3;
+}
+#habilidades {
+  width: 100%;
+}
+.nome-porcent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #c62828;
+}
+.barra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #183229;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 3px solid #c62828;
+}
+.progresso {
+  background-color: #c62828;
+  width: 90%;
+  height: 70%;
+  border-radius: 5px;
+  margin-left: 3px;
+}
+#redes-sociais {
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+#redes-sociais nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+#redes-sociais nav ul li {
+  list-style-type: none;
+}
+#redes-sociais nav ul li a {
+  display: block;
+  align-content: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: #ffffff;
+  width: 100%;
+  background-color: #183229;
+  border: 3px solid #c62828;
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px;
+  transition: 0.2s;
+}
+#redes-sociais nav ul li a:hover {
+  background-color: #c62828;
+  border: 3px solid #183229;
+  color: #183229;
+}
+main {
+  grid-column: 4;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 3px solid #183229;
+  border-radius: 15px;
+  height: 100vh;
+  width: 500px;
+  background-color: #c62828;
+}
