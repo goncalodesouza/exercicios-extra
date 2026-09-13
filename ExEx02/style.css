@@ -7,11 +7,11 @@
 }
 body {
   display: grid;
-  grid-template-columns: 10px 500px 20px auto;
+  grid-template-columns: 10px 500px 20px auto 10px;
   grid-template-rows: 10px auto 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-variant: small-caps;
-  background-color: #f4f1ea;
+  background-color: #f4c430;
 }
 aside {
   grid-column: 2 / 3;
@@ -43,20 +43,20 @@ aside img {
   font-size: 3.7em;
   font-weight: bolder;
   margin: 5px 0px -5px 0px;
-  color: #ffffff;
+  color: #f4c430;
 }
 #dev-info #profissao {
   font-size: 1.4em;
   font-weight: 600;
   margin: 0px 0px 5px 0px;
-  color: #dcd3c3;
+  color: #c9b458;
 }
 #dev-info #descricao {
   text-align: justify;
   font-size: 1em;
   font-weight: normal;
   margin: 10px 0 10px 0;
-  color: #dcd3c3;
+  color: #c9b458;
 }
 #habilidades {
   width: 100%;
@@ -65,7 +65,7 @@ aside img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #c62828;
+  color: #c9b458;
 }
 .barra {
   display: flex;
@@ -104,19 +104,26 @@ aside img {
   text-decoration: none;
   font-size: 1.5em;
   font-weight: bolder;
-  color: #ffffff;
+  color: #d0b84f;
   width: 100%;
-  background-color: #183229;
-  border: 3px solid #c62828;
+  background-color: #29483d;
+  border: 3px solid #c33a3a;
   text-align: center;
   border-radius: 15px;
   padding: 10px;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 #redes-sociais nav ul li a:hover {
-  background-color: #c62828;
-  border: 3px solid #183229;
-  color: #183229;
+  color: #29483d;
+  background:
+    radial-gradient(circle at 60% 50%, #d0b84f 0 12%, transparent 12.5%),
+    linear-gradient(
+      to right,
+      #c33a3a 0%,
+      #c33a3a 60%,
+      #29483d 60%,
+      #29483d 100%
+    );
 }
 main {
   grid-column: 4;
@@ -128,6 +135,108 @@ main {
   border: 3px solid #183229;
   border-radius: 15px;
   height: 100vh;
-  width: 500px;
+  width: 100%;
   background-color: #c62828;
+}
+main h2 {
+  font-size: 5em;
+  font-weight: bolder;
+  color: #f4c430;
+}
+#estatisticas-lista {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  margin: 300px auto 100px auto;
+  font-size: 2em;
+  align-items: center;
+}
+span {
+  color: #f4c430;
+}
+.estatistica1 {
+  grid-area: 1 / 2 / 2 / 3;
+  border: 3px solid #29483d;
+  padding: 50px;
+  color: #29483d;
+  border-radius: 10px;
+  border-top-left-radius: 30px;
+  background: #c62828;
+  transition: 1s;
+}
+.estatistica2 {
+  grid-area: 3 / 2 / 4 / 3;
+  border: 3px solid #29483d;
+  padding: 50px;
+  color: #29483d;
+  border-radius: 10px;
+  border-bottom-left-radius: 30px;
+  background: #c62828;
+  transition: 1s;
+}
+.estatistica3 {
+  grid-area: 3 / 4 / 4 / 5;
+  border: 3px solid #29483d;
+  padding: 50px;
+  color: #29483d;
+  border-radius: 10px;
+  border-bottom-right-radius: 30px;
+  transition: 1s;
+}
+.estatistica4 {
+  grid-area: 1 / 4 / 2 / 5;
+  border: 3px solid #29483d;
+  padding: 50px;
+  color: #29483d;
+  border-radius: 10px;
+  border-top-right-radius: 30px;
+  transition: 1s;
+}
+.estatistica1:hover,
+.estatistica2:hover {
+  background-color: #c33a3a;
+}
+.estatistica3:hover,
+.estatistica4:hover {
+  background:
+    radial-gradient(circle at 60% 50%, #d0b84f 0 12%, transparent 12.5%),
+    linear-gradient(
+      to right,
+      #c33a3a 0%,
+      #c33a3a 60%,
+      #29483d 60%,
+      #29483d 100%
+    );
+}
+main a {
+  display: block;
+  align-content: center;
+  text-decoration: none;
+  font-size: 2.5em;
+  font-weight: bolder;
+  color: #d0b84f;
+  width: 100%;
+  background-color: #29483d;
+  border: 3px solid #c33a3a;
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px;
+  transition: 0.5s;
+}
+main a span {
+  color: #d0b84f;
+}
+main a:hover {
+  color: #29483d;
+  background:
+    radial-gradient(circle at 60% 50%, #d0b84f 0 12%, transparent 12.5%),
+    linear-gradient(
+      to right,
+      #c33a3a 0%,
+      #c33a3a 60%,
+      #29483d 60%,
+      #29483d 100%
+    );
 }
