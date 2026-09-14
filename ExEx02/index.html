@@ -3,69 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cartão de apresentação</title>
+    <title>Cartão de produto</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <aside>
-      <img src="imagens/homem.jpg" alt="Foto de Alex Martins" />
-      <div id="dev-info">
-        <h1>Alex Martins</h1>
-        <p id="profissao">Front-End Developer</p>
+    <div class="card">
+      <div id="card-img">
+        <img
+          src="imagens/Sapatilhas_Samba_OG_Branco_B75806_01_00_standard.jpg"
+          alt="Adidas Samba OG"
+        />
+      </div>
+      <div id="card-info">
+        <h1>Adidas Samba OG</h1>
         <p id="descricao">
-          Desenvolvedor apaixonado por criar interfaces modernas, simples e
-          facéis de utilizar.
+          Um clássico intemporal com um design simples e versátil, perfeito para
+          completar qualquer look.
         </p>
+        <p id="preco">120€</p>
       </div>
-      <div id="habilidades">
-        <div class="nome-porcent"><span>HTML5</span><span>90%</span></div>
-        <div class="barra">
-          <div class="progresso" style="width: 90%"></div>
-        </div>
-        <div class="nome-porcent"><span>CSS3</span><span>65%</span></div>
-        <div class="barra">
-          <div class="progresso" style="width: 65%"></div>
-        </div>
-        <div class="nome-porcent"><span>JavaScript</span><span>10%</span></div>
-        <div class="barra">
-          <div class="progresso" style="width: 10%"></div>
-        </div>
-      </div>
-      <div id="redes-sociais">
-        <nav>
-          <ul>
-            <li>
-              <a href="#">GitHub</a>
-            </li>
-            <li>
-              <a href="#">Instagram</a>
-            </li>
-            <li>
-              <a href="#">LinkedIn</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </aside>
-    <main>
-      <h2>Estátisticas</h2>
-      <div id="estatisticas-lista">
-        <div class="estatistica1">
-          <h3>12 <br /><span>Projetos</span></h3>
-        </div>
-        <div class="estatistica2">
-          <h3>2 anos <br /><span>Experiência</span></h3>
-        </div>
-        <div class="estatistica3">
-          <h3>8 <br /><span>Tecnologias</span></h3>
-        </div>
-        <div class="estatistica4">
-          <h3>24 <br /><span>Clientes</span></h3>
-        </div>
-      </div>
-      <div id="main-botao">
-        <a href="#">Ver portf<span>ólio</span></a>
-      </div>
-    </main>
+      <button type="button">Adicionar ao carrinho</button>
+    </div>
   </body>
 </html>
