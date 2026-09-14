@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Casa Nostra</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -35,42 +36,52 @@
           <img src="" alt="Comida típica italiana" />
         </div>
       </section>
+      <hr />
       <section id="specialties">
         <h2>As nossas especialidades</h2>
-        <p>Alguns dos pratos que fazem parte da nossa cozinha.</p>
+        <p class="specialties-info">
+          Alguns dos pratos que fazem parte da nossa cozinha.
+        </p>
         <div id="specialties-list">
-          <div class="specialties-card">
+          <div class="specialties-card" id="card1">
             <div id="card-img">
               <img src="" alt="" />
             </div>
-            <h3>Pasta Carbonara</h3>
-            <p class="description">
-              Massa fresca, guanciale, pecorino e gema de ovo.
-            </p>
-            <p class="price">14,50€</p>
+            <div class="card-info">
+              <h3>Pasta Carbonara</h3>
+              <p class="description">
+                Massa fresca, guanciale, pecorino e gema de ovo.
+              </p>
+              <p class="price">14,50€</p>
+            </div>
           </div>
-          <div class="specialties-card">
+          <div class="specialties-card" id="card2">
             <div id="card-img">
               <img src="" alt="" />
             </div>
-            <h3>Pizza Margherita</h3>
-            <p class="description">
-              Molho de tomate, mozzarella fresca e manjericão.
-            </p>
-            <p class="price">12,00€</p>
+            <div class="card-info">
+              <h3>Pizza Margherita</h3>
+              <p class="description">
+                Molho de tomate, mozzarella fresca e manjericão.
+              </p>
+              <p class="price">12,00€</p>
+            </div>
           </div>
-          <div class="specialties-card">
+          <div class="specialties-card" id="card3">
             <div id="card-img">
               <img src="" alt="" />
             </div>
-            <h3>Tiramisu</h3>
-            <p class="description">
-              A nossa versão clássica do tradicional tiramisu italiano.
-            </p>
-            <p class="price">6,50€</p>
+            <div class="card-info">
+              <h3>Tiramisu</h3>
+              <p class="description">
+                A nossa versão clássica do tradicional tiramisu italiano.
+              </p>
+              <p class="price">6,50€</p>
+            </div>
           </div>
         </div>
       </section>
+      <hr />
       <section id="about-us">
         <div id="about-us-img">
           <img src="" alt="" />
@@ -87,11 +98,13 @@
           </div>
         </div>
       </section>
+      <hr />
       <section id="cta">
         <h2>Uma mesa, bons sabores e tempo para aproveitar.</h2>
         <button class="book">Fazer Reserva</button>
       </section>
     </main>
+    <hr />
     <footer>
       <h2>CASA NOSTRA</h2>
       <p>Restaurante italiano</p>
