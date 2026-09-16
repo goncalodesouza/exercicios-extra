@@ -1,0 +1,115 @@
+:root {
+  --titulo: Georgia, "Times New Roman", Times, serif;
+  --texto: Arial, Helvetica, sans-serif;
+  --verde-floresta: #24382f;
+  --verde-suave: #52665b;
+  --bege: #f2ede3;
+  --areia: #d8c9b3;
+  --branco: #ffffff;
+  --cor-texto: #252824;
+  --cinza: #747873;
+  --dourado: #b99a63;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#hero-area {
+  height: 1080px;
+  background-image: url("imagens/fundo-hero.WebP");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#hero-area header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 50px;
+}
+#hero-area header h1 {
+  color: var(--areia);
+  font-size: 3em;
+}
+#hero-area header h1 span {
+  color: var(--dourado);
+}
+#hero-area header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+#hero-area header nav ul li {
+  list-style-type: none;
+}
+#hero-area header nav ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--verde-suave);
+}
+#hero-area header nav ul li a:hover {
+  color: var(--verde-floresta);
+}
+#hero-area header nav ul li button {
+  background-color: var(--verde-suave);
+  font-family: var(--texto);
+  color: var(--areia);
+  font-size: 1em;
+  height: 30px;
+  width: 190px;
+  border-radius: 10px;
+  border: none;
+  transition: 0.2s;
+}
+#hero-area header nav ul li button:hover {
+  background-color: var(--verde-floresta);
+}
+#hero {
+  min-height: calc(100% - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#hero-info h2 {
+  font-family: var(--titulo);
+  color: var(--areia);
+  font-size: 6em;
+  font-weight: bold;
+}
+#hero-info p {
+  font-family: var(--texto);
+  color: var(--bege);
+  font-weight: normal;
+  font-size: 1.7em;
+}
+#hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+#hero-buttons button {
+  background-color: var(--verde-suave);
+  font-family: var(--texto);
+  color: var(--areia);
+  font-size: 1.3em;
+  height: 50px;
+  width: 250px;
+  border-radius: 10px;
+  border: none;
+  transition: 0.2s;
+}
+#hero-buttons button:hover {
+  background-color: var(--verde-floresta);
+  color: var(--dourado);
+  transform: scale(1.1);
+}
