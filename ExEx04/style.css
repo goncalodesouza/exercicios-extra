@@ -113,3 +113,224 @@
   color: var(--dourado);
   transform: scale(1.1);
 }
+#book {
+  background-color: var(--bege);
+  height: 550px;
+}
+#book-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 50px;
+}
+main h2 {
+  font-family: var(--titulo);
+  color: var(--verde-floresta);
+  font-size: 3em;
+  font-weight: bold;
+}
+main p {
+  font-family: var(--texto);
+  color: var(--verde-suave);
+  font-weight: normal;
+  font-size: 1.5em;
+}
+#book-list {
+  display: grid;
+  grid-template-columns: auto repeat(4, 200px) auto;
+  grid-template-rows: auto 200px auto;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin: 50px;
+  background-color: var(--verde-floresta);
+  border-radius: 30px;
+  justify-content: center;
+}
+#book-card1 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+#book-card2 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+#book-card3 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+#book-card4 {
+  grid-area: 2 / 5 / 3 / 6;
+}
+.book-card {
+  background-color: var(--verde-suave);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+.book-card label {
+  font-size: 1.5em;
+  margin: 10px;
+  font-weight: bold;
+  color: var(--verde-floresta);
+}
+.book-card input,
+.book-card select {
+  margin: 10px;
+  height: 50px;
+  font-size: 1.3em;
+  background-color: var(--dourado);
+  color: var(--branco);
+  border: none;
+  border-radius: 5px;
+}
+.book-card p {
+  font-size: 1.3em;
+  margin: 10px;
+  font-weight: bolder;
+  color: var(--bege);
+}
+#book-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+#book-button button {
+  background-color: var(--verde-suave);
+  font-family: var(--texto);
+  color: var(--areia);
+  font-size: 1.3em;
+  height: 50px;
+  width: 250px;
+  border-radius: 10px;
+  border: none;
+  transition: 0.2s;
+}
+#book-button button:hover {
+  background-color: var(--verde-floresta);
+  color: var(--dourado);
+  transform: scale(1.1);
+}
+hr {
+  background-color: var(--verde-floresta);
+  height: 3px;
+  border: none;
+}
+#highlights {
+  background-color: var(--bege);
+  height: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#highlights-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#highlights-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.highlights-card {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--verde-floresta);
+  width: 380px;
+  height: 400px;
+  border-radius: 20px;
+}
+.card-info h3 {
+  font-size: 1.5em;
+  color: var(--areia);
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.card-info p {
+  color: var(--bege);
+  font-size: 1.1em;
+  margin-left: 10px;
+}
+.card-img img {
+  width: 380px;
+  height: 285px;
+  border-radius: 20px;
+}
+#rooms {
+  background-color: var(--bege);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 630px;
+}
+#rooms-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+#rooms-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.rooms-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--areia);
+  width: 380px;
+  height: 460px;
+  border-radius: 20px;
+}
+.room-cards-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.room-cards-info h3 {
+  font-size: 1.9em;
+  color: var(--verde-floresta);
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.room-cards-info p {
+  color: var(--verde-suave);
+  font-size: 1.1em;
+  margin-left: 10px;
+}
+.room-card-button {
+  display: flex;
+  justify-content: center;
+}
+.room-card-button button {
+  background-color: var(--verde-suave);
+  font-family: var(--texto);
+  color: var(--bege);
+  font-size: 1.3em;
+  height: 30px;
+  width: 150px;
+  border-radius: 10px;
+  margin: 20px 0;
+  border: none;
+  transition: 0.2s;
+}
+.room-card-button button:hover {
+  background-color: var(--verde-floresta);
+  color: var(--areia);
+  transform: scale(1.1);
+}
+.room-card-img {
+  display: flex;
+  justify-content: flex-end;
+}
+.room-card-img img {
+  width: 380px;
+  height: 285px;
+  border-radius: 20px;
+}
