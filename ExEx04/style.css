@@ -409,6 +409,7 @@ hr {
   height: 490px;
 }
 #about {
+  background-color: var(--bege);
   display: grid;
   grid-template-columns: auto 760px 500px auto;
   grid-template-rows: auto 560px 100px auto;
@@ -476,4 +477,36 @@ hr {
 }
 .stat + .stat {
   border-left: 3px solid var(--verde-floresta);
+}
+#cta {
+  background-color: var(--bege);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#cta h2 {
+  margin: 20px 0;
+  font-size: 4em;
+}
+#cta p {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+#cta button {
+  background-color: var(--verde-floresta);
+  font-family: var(--texto);
+  color: var(--bege);
+  font-size: 1.6em;
+  height: 80px;
+  width: 220px;
+  border-radius: 10px;
+  border: none;
+  transition: 0.2s;
+  margin-bottom: 20px;
+}
+#cta button:hover {
+  background-color: var(--verde-suave);
+  border: 3px solid var(--verde-floresta);
+  transform: scale(1.1);
 }
