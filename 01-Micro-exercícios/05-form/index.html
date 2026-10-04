@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="" method="get">
+      <h1>Fala connosco</h1>
+      <p>Entra em contacto com a <span>NovaTech</span>.</p>
+      <div class="input-label">
+        <label for="inome">Nome</label>
+        <input type="text" name="nome" id="inome" placeholder="O teu nome" />
+      </div>
+      <div class="input-label">
+        <label for="iemail">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="iemail"
+          placeholder="O teu email"
+        />
+      </div>
+      <div class="input-label">
+        <label for="iassunto">Assunto</label>
+        <input
+          type="text"
+          name="assunto"
+          id="iassunto"
+          placeholder="Assunto da mensagem"
+        />
+      </div>
+      <div class="input-label">
+        <label for="imensagem">Mensagem</label>
+        <textarea
+          name="mensagem"
+          id="imensagem"
+          placeholder="Escreve a tua mensagem..."
+        ></textarea>
+      </div>
+      <input type="submit" value="Enviar mensagem" />
+    </form>
+  </body>
+</html>

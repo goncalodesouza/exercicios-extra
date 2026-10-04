@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f3f4f6;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+article {
+  background-color: #ffffff;
+  color: #6b7280;
+  border: 3px solid #e5e7eb;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  border: 3px solid #e5e7eb;
+  width: 200px;
+  height: 200px;
+  object-position: top;
+  object-fit: cover;
+  border-radius: 500px;
+  margin: 10px;
+}
+#card-content {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  color: #111827;
+  font-size: 2.3em;
+  margin-bottom: -5px;
+}
+p#profissao {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+p#descricao {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+p#localizacao {
+  font-size: 1.1em;
+}
+button {
+  margin: 10px 0;
+  font-size: 1.1em;
+  width: 100px;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+  outline: none;
+  border-radius: 5px;
+  background-color: transparent;
+}

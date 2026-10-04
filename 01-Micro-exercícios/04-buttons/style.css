@@ -1,0 +1,33 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+button {
+  padding: 10px;
+  font-size: 1.1em;
+  border-radius: 10px;
+}
+#botao1 {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: 3px solid #2563eb;
+}
+#botao2 {
+  background-color: white;
+  color: #2563eb;
+  border: 3px solid #2563eb;
+}
+#botao3 {
+  background-color: #111827;
+  color: white;
+  border: 3px solid #111827;
+}
