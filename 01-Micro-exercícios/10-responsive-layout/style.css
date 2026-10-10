@@ -308,4 +308,32 @@ footer {
     font-size: 0.9em;
     padding: 10px;
   }
+  .event-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .event-card {
+    min-height: 200px;
+  }
+  .event-number {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .event-info p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .cta p {
+    font-size: 0.8em;
+  }
+  .cta h2 {
+    font-size: 2.2em;
+  }
+  .cta .btn {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+  footer p {
+    font-size: 0.9em;
+  }
 }
