@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+:root {
+  /* Cores */
+  --cor-fundo: #111311;
+  --cor-fundo-secundario: #1c211c;
+  --cor-cartao: #252a24;
+  --cor-texto: #f4f4ec;
+  --cor-texto-secundario: #a5ada1;
+  --cor-destaque: #c5f36a;
+
+  /* Tipografia */
+  --fonte-principal: Arial, Helvetica, sans-serif;
+
+  /* Layout */
+  --largura-maxima: 1200px;
+
+  /* Espaçamentos */
+  --espacamento-pequeno: 8px;
+  --espacamento-medio: 16px;
+  --espacamento-grande: 32px;
+  --espacamento-seccao: 100px;
+
+  /* Bordas */
+  --raio-cartao: 16px;
+  --raio-botao: 8px;
+
+  /* Transições */
+  --transicao: 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte-principal);
+}
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cor-cartao);
+  margin: 20px;
+  border-radius: var(--raio-cartao);
+  box-shadow: 10px 10px 20px var(--cor-fundo-secundario);
+}
+h1 {
+  font-size: 2.3em;
+  margin: 20px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 20px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: var(--cor-texto-secundario);
+  text-decoration: none;
+  font-size: 1.3em;
+  padding: 10px;
+  border-radius: var(--raio-botao);
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: var(--cor-destaque);
+  background-color: var(--cor-fundo-secundario);
+}
+#destaque {
+  background-color: var(--cor-destaque);
+  color: var(--cor-cartao);
+  transition: 0.3s;
+}
+main {
+  margin-top: 50px;
+}
+#hero {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+#hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#etiqueta {
+  font-size: 1em;
+  margin-bottom: 4px;
+}
+#hr-etiqueta {
+  background-color: var(--cor-destaque);
+  height: 2px;
+  width: 120px;
+  border: none;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 2.3em;
+  margin-bottom: 5px;
+}
+.descricao {
+  font-size: 1.4em;
+  color: var(--cor-texto-secundario);
+  margin-bottom: 20px;
+}
+#hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#hero-buttons a {
+  background-color: var(--cor-destaque);
+  color: var(--cor-cartao);
+  transition: 0.3s;
+  color: var(--cor-texto-secundario);
+  text-decoration: none;
+  font-size: 1.3em;
+  padding: 10px;
+  border-radius: var(--raio-botao);
+  transition: 0.3s;
+}
+#hero img {
+  border-radius: var(--raio-cartao);
+  object-fit: cover;
+}
