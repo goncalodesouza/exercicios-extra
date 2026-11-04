@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  width: 100vw;
+}
 header {
   background-color: #183a36;
   margin: 20px;
@@ -17,7 +20,7 @@ header {
 h1 {
   color: #e9e1d1;
   margin-left: 20px;
-  font-size: 2.2em;
+  font-size: 2.4em;
 }
 nav ul {
   display: flex;
@@ -41,4 +44,62 @@ nav ul li a:hover {
   margin-right: 20px;
   padding: 15px;
   border-radius: 20px;
+}
+main {
+  background-color: #f2f0e9;
+  border-radius: 20px;
+  margin: 20px;
+  color: #183a36;
+}
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h2 {
+  font-size: 2em;
+  margin: 10px 0 0 20px;
+}
+#hero-content p {
+  font-size: 1.2em;
+  margin: 0 0 10px 20px;
+  color: #12302c;
+}
+.card-list {
+  margin: 0 20px 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 24px;
+}
+.card {
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: 12px;
+}
+.card img {
+  height: 200px;
+  width: 100%;
+  border: 3px solid #183a36;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+}
+.card-content {
+  padding: 14px;
+}
+h3 {
+  font-size: 1.8em;
+  line-height: 0.7;
+  font-weight: bold;
+}
+.category {
+  font-size: 1.2em;
+  color: #0f2724a2;
+}
+strong {
+  color: #d97745;
+  padding: 5px;
+  font-size: 1.4em;
+  font-weight: bolder;
 }
