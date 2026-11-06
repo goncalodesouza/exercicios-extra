@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STOCKROOM</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside id="sidebar">
+      <h1>STOCKROOM <br /><span>INVENTORY MANAGEMENT</span></h1>
+      <hr />
+      <strong>MENU</strong>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"
+              >Visão geral <strong>-</strong>
+              <span>Consultar o resumo do stock.</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              >Produtos <strong>-</strong>
+              <span>Consultar os produtos registados.</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              >Inventário <strong>-</strong>
+              <span>Acompanhar as quantidades disponíveis.</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              >Movimentações <strong>-</strong>
+              <span>Consultar entradas e saídas de produtos.</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              >Definições <strong>-</strong>
+              <span>Aceder às configurações da aplicação.</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div id="account">
+        <span class="material-symbols-outlined"> account_circle </span>
+        <div id="account-info">
+          <p id="account-name">Administração</p>
+          <p id="cargo">Gestor de stock</p>
+        </div>
+      </div>
+    </aside>
+    <header>
+      <div id="left-side">
+        <h3>PAINEL DE CONTROLO</h3>
+        <h2>Visão geral</h2>
+      </div>
+      <div id="right-side">
+        <p id="date">06 NOVEMBRO 2026</p>
+        <span class="material-symbols-outlined"> notifications </span>
+      </div>
+    </header>
+    <main>
+      <section id="cards-list">
+        <article class="card">
+          <h4>Total de produtos</h4>
+          <p id="number">Número: 128</p>
+          <p id="description">Descrição: Produtos registados.</p>
+          <span class="material-symbols-outlined"> box </span>
+        </article>
+        <article class="card">
+          <h4>Em stock</h4>
+          <p id="number">Número: 104</p>
+          <p id="description">Descrição: Produtos disponíveis.</p>
+          <span class="material-symbols-outlined"> check_box </span>
+        </article>
+        <article class="card">
+          <h4>Stock reduzido</h4>
+          <p id="number">Número: 16</p>
+          <p id="description">Descrição: Necessitam de atenção.</p>
+          <span class="material-symbols-outlined"> warning </span>
+        </article>
+        <article class="card">
+          <h4>Sem stock</h4>
+          <p id="number">Número: 8</p>
+          <p id="description">Descrição: Produtos indisponíveis.</p>
+          <span class="material-symbols-outlined"> crisis_alert </span>
+        </article>
+      </section>
+      <section id="products-inventory">
+        <h2>Inventário de produtos</h2>
+        <p>Consulta e acompanha os produtos da loja.</p>
+        <input
+          type="search"
+          name="procura"
+          id="procura"
+          placeholder="Pesquisar produtos..."
+        />
+        <input type="button" value="+ Adicionar produto" />
+      </section>
+      <section id="table">
+        <table>
+          <tr>
+            <th>Produto</th>
+            <th>Referência</th>
+            <th>Categoria</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Estado</th>
+          </tr>
+          <tr>
+            <th>Overshirt Canvas</th>
+            <th>ST-001</th>
+            <th>Casacos</th>
+            <th>49,90 €</th>
+            <th>24</th>
+            <th>Disponível</th>
+          </tr>
+          <tr>
+            <th>Essential Tee</th>
+            <th>ST-002</th>
+            <th>T-shirts</th>
+            <th>24,90 €</th>
+            <th>3</th>
+            <th>Stock reduzido</th>
+          </tr>
+          <tr>
+            <th>Relaxed Trousers</th>
+            <th>ST-003</th>
+            <th>Calças</th>
+            <th>44,90 €</th>
+            <th>12</th>
+            <th>Disponível</th>
+          </tr>
+          <tr>
+            <th>Core Sweatshirt</th>
+            <th>ST-004</th>
+            <th>Sweats</th>
+            <th>39,90 €</th>
+            <th>0</th>
+            <th>Sem stock</th>
+          </tr>
+          <tr>
+            <th>Utility Jacket</th>
+            <th>ST-005</th>
+            <th>Casacos</th>
+            <th>59,90 €</th>
+            <th>18</th>
+            <th>Disponível</th>
+          </tr>
+          <tr>
+            <th>Daily Shorts</th>
+            <th>ST-006</th>
+            <th>Calções</th>
+            <th>29,90 €</th>
+            <th>5</th>
+            <th>Stock reduzido</th>
+          </tr>
+        </table>
+      </section>
+      <section id="verify-stock">
+        <div id="identification">
+          <h2>Verificar stock</h2>
+          <p>Consulta o estado de stock de um produto.</p>
+        </div>
+        <div id="select-product">
+          <p id="tag">Selecionar produto</p>
+          <select name="selecionar" id="selecionar">
+            <h4>Escolhe um produto</h4>
+            <option value="Overshirt Canvas">Overshirt Canvas</option>
+            <option value="Essential Tee">Essential Tee</option>
+            <option value="Relaxed Trousers">Relaxed Trousers</option>
+            <option value="Core Sweatshirt">Core Sweatshirt</option>
+            <option value="Utility Jacket">Utility Jacket</option>
+            <option value="Daily Shorts">Daily Shorts</option>
+          </select>
+        </div>
+        <div id="quantity">
+          <p class="tag">Quantidade em stock</p>
+          <input
+            type="number"
+            name="quantidade"
+            id="quantidade"
+            placeholder="Introduz a quantidade"
+          />
+          <input type="button" value="Verificar" />
+          <div id="result">
+            Seleciona um produto e introduz a quantidade para verificar o seu
+            estado.
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer><p>STOCKROOM © 2026 — Sistema de Gestão de Stock.</p></footer>
+  </body>
+</html>
