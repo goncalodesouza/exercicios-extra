@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+:root {
+  --fundo-principal: #f8fafc;
+  --sidebar: #0f172a;
+  --sidebar—item-ativo: #1e3a6d;
+  --cartões-painéis: #ffffff;
+  --texto-principal: #0f172a;
+  --texto-secundário: #64748b;
+  --bordas: #e2e8f0;
+  --azul-principal: #2563eb;
+  --azul-hover: #1d4ed8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--fundo-principal);
+  font-family: sans-serif;
+  height: 100vh;
+}
+.app-layout {
+  display: flex;
+  align-items: center;
+}
+#sidebar {
+  background-color: var(--sidebar);
+  height: 100vh;
+  color: var(--bordas);
+  padding: 10px;
+}
+h1 {
+  color: var(--bordas);
+  font-size: 1em;
+  font-weight: bold;
+}
+h1 span {
+  color: var(--cartões-painéis);
+  font-size: 2em;
+  font-weight: bold;
+}
+hr {
+  background-color: var(--texto-secundário);
+  height: 2px;
+  border: none;
+  width: 90%;
+  margin: 10px 0;
+}
+#menu-text {
+  font-size: 1.3em;
+  color: var(--bordas);
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+}
+nav ul li a:hover {
+  background-color: var(--sidebar—item-ativo);
+}
