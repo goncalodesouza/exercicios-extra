@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StockRoom Ex02</title>
+  </head>
+  <body>
+    <h1>StockRoom</h1>
+    <input
+      type="text"
+      name="prod"
+      id="prod"
+      placeholder="Escolhe o produto..."
+    />
+    <select name="estado" id="estado">
+      <option value="Ok">Ok</option>
+      <option value="FaltaPouco">Falta Pouco</option>
+      <option value="EmFalta">Em Falta</option>
+    </select>
+    <input type="button" value="Verificar" id="button" />
+    <div id="resultado"></div>
+
+    <script>
+      var btn = window.document.getElementById("button");
+      btn.addEventListener("click", verificar);
+      function verificar() {
+        var ce = window.document.getElementById("estado");
+        var r = window.document.getElementById("resultado");
+        var p = window.document.getElementById("prod").value;
+
+        const escolha = ce.value;
+
+        if (escolha == "Ok") {
+          r.innerText = "Produto: " + p + "\n" + "Não precisas comprar nada.";
+        } else if (escolha == "FaltaPouco") {
+          r.innerText =
+            "Produto: " + p + "\n" + "Não há muita necessidade de comprar já.";
+        } else if (escolha == "EmFalta") {
+          r.innerText =
+            "Produto: " + p + "\n" + "É preciso comprar com urgência.";
+        }
+      }
+    </script>
+  </body>
+</html>

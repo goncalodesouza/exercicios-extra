@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StockRoom Ex05</title>
+  </head>
+  <body>
+    <h1>StockRoom</h1>
+    <input
+      type="text"
+      name="prod"
+      id="prod"
+      placeholder="Escolhe o produto..."
+    />
+    <input type="text" name="loja" id="loja" placeholder="Escolhe a loja" />
+    <select name="estado" id="estado">
+      <option value="Ok">Ok</option>
+      <option value="FaltaPouco">Falta Pouco</option>
+      <option value="EmFalta">Em Falta</option>
+    </select>
+    <input type="button" value="Verificar" id="button" />
+    <div id="resultado"></div>
+
+    <script>
+      var btn = window.document.getElementById("button");
+      btn.addEventListener("click", verificar);
+      function verificar() {
+        var ce = window.document.getElementById("estado");
+        var r = window.document.getElementById("resultado");
+        const produto = window.document.getElementById("prod").value;
+        const loja = window.document.getElementById("loja").value;
+
+        const escolha = ce.value;
+        if (produto == "" && loja == "") {
+          r.innerText = "Por favor, introduza um produto e uma loja válidos.";
+          return;
+        } else if (produto == "") {
+          r.innerText = "Por favor, introduza um produto válido.";
+          return;
+        } else if (loja == "") {
+          r.innerText = "Por favor, introduza uma loja válida.";
+          return;
+        }
+
+        if (escolha == "Ok") {
+          r.innerText = `Produto: ${produto}
+          Loja: ${loja}
+          
+          Não precisas comprar nada.`;
+          r.style.color = "green";
+        } else if (escolha == "FaltaPouco") {
+          r.innerText = `Produto: ${produto}
+          Loja: ${loja}
+
+          Não há muita necessidade de comprar já.`;
+          r.style.color = "orange";
+        } else if (escolha == "EmFalta") {
+          r.innerText = `Produto: ${produto}
+          Loja: ${loja}
+
+          É preciso comprar com urgência.`;
+          r.style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>

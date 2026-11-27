@@ -3,73 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>STOCKROOM</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <title>StockRoom Ex01</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">TUDO</a></li>
-          <li><a href="#">CONTINENTE</a></li>
-          <li><a href="#">INTERMARCHÉ</a></li>
-        </ul>
-      </nav>
-    </header>
-    <hr />
-    <main>
-      <h2>Lista:</h2>
-      <ul>
-        <li class="card">
-          <img src="" alt="" />
-          <div class="prod-text">
-            <h3>Nome do produto</h3>
-            <span>LOJA</span>
-            <strong>Preço</strong>
-          </div>
-        </li>
-        <li class="card">
-          <img src="" alt="" />
-          <div class="prod-text">
-            <h3>Nome do produto</h3>
-            <span>LOJA</span>
-            <strong>Preço</strong>
-          </div>
-        </li>
-        <li class="card">
-          <img src="" alt="" />
-          <div class="prod-text">
-            <h3>Nome do produto</h3>
-            <span>LOJA</span>
-            <strong>Preço</strong>
-          </div>
-        </li>
-        <li class="card">
-          <img src="" alt="" />
-          <div class="prod-text">
-            <h3>Nome do produto</h3>
-            <span>LOJA</span>
-            <strong>Preço</strong>
-          </div>
-        </li>
-        <li class="card">
-          <img src="" alt="" />
-          <div class="prod-text">
-            <h3>Nome do produto</h3>
-            <span>LOJA</span>
-            <strong>Preço</strong>
-          </div>
-        </li>
-      </ul>
-    </main>
-    <footer>
-      <p>Total: <strong>PREÇO</strong></p>
-    </footer>
+    <h1>StockRoom</h1>
+
+    <select name="estado" id="estado">
+      <option value="Ok">Ok</option>
+      <option value="FaltaPouco">Falta Pouco</option>
+      <option value="EmFalta">Em Falta</option>
+    </select>
+    <input type="button" value="Verificar" id="button" />
+    <div id="resultado"></div>
+
+    <script>
+      var btn = window.document.getElementById("button");
+      btn.addEventListener("click", verificar);
+      function verificar() {
+        var ce = window.document.getElementById("estado");
+        var r = window.document.getElementById("resultado");
+
+        const escolha = ce.value;
+
+        if (escolha == "Ok") {
+          r.innerText = "Não precisas comprar nada.";
+        } else if (escolha == "FaltaPouco") {
+          r.innerText = "Não há muita necessidade de comprar já.";
+        } else if (escolha == "EmFalta") {
+          r.innerText = "É preciso comprar com urgência.";
+        }
+      }
+    </script>
   </body>
 </html>
